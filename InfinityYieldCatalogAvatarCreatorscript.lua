@@ -119,7 +119,7 @@ end
 -- Run the script after key verification
 local function runMainScript()
     -- Your original script logic here
-    local Games = 
+    local Games = loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     for PlaceID, Execute in pairs(Games) do
         if PlaceID == game.PlaceId then
             loadstring(game:HttpGet(Execute))()
